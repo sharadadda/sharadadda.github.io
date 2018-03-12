@@ -307,7 +307,7 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .wrap-contact100-form-btn {
@@ -335,7 +335,7 @@ textarea.input100 {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact100-form-btn {
