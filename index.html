@@ -170,7 +170,17 @@
          </p>
 
          <div class="action">
-             <a class="button large" href="https://photos.app.goo.gl/QdXBjklUxY30Crm03" target="_blank">View Photos</a>
+             <!--<a class="button large" href="https://photos.app.goo.gl/QdXBjklUxY30Crm03" target="_blank">View Photos</a> -->
+             
+               
+             <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn button large">View Photos</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="https://photos.app.goo.gl/FFcanv1cGSNTuqdF9" target="_blank">2018</a>
+                    <a href="https://photos.app.goo.gl/MxBjtqQhyYXKivdr9" target="_blank">2017</a>
+                  </div>
+                </div>
+                  
              <a class="button large" href="https://www.youtube.com/playlist?list=PLjLvSg4p5RPxZ2s2AisjEn2Y_VMW2h3K-" target="_blank">Watch Videos</a>
            </div>
 
@@ -263,6 +273,28 @@
 
   gtag('config', 'UA-115697776-1');
 </script>
+<script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      
 
 
 </body>
